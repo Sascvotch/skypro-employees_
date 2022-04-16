@@ -16,6 +16,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         for (int i = 0; i <= size; i++) {
             if (employeeAdd.equals(employee[i])) {
                 throw new EmployeeAlreadyExists();
+
             }
         }
         employee[size] =new Employee(firstName, lastName);
